@@ -73,7 +73,7 @@ export default function RootLayout({
   };
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={"root"}>
         <HeaderAction links={links.links} />
         {children}
       </body>
