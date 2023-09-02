@@ -127,7 +127,7 @@ export function HeaderAction({ links }: HeaderActionProps) {
     <Header
       height={HEADER_HEIGHT}
       sx={{ borderBottom: 0, display: "flex", justifyContent: "center" }}
-      mb={120}
+      mb={20}
     >
       <Paper shadow="xl" className={classes.navbar}>
         <Container className={classes.inner} size="xl">
