@@ -1,6 +1,32 @@
-.main {
+/* .main {
     border-radius: 50px;
     background: linear-gradient(145deg, #cacaca, #f0f0f0);
     box-shadow: 20px 20px 60px #bebebe,
         -20px -20px 60px #ffffff;
+} */
+
+.gradient1 {
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+
+.gradient2 {
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.gradient3 {
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+}
+
+.textGrad {
+    background: linear-gradient(to right,
+            #f86300 0%,
+            #e7c415 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.gradient4 {
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+
 }
