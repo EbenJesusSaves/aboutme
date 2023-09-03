@@ -1,15 +1,17 @@
 "use client";
-import { Paper } from "@mantine/core";
+import { Paper, Text } from "@mantine/core";
 import React from "react";
 import "./main.css";
+import { myFont } from "@/app/layout";
 export const LandingPage = () => {
   return (
-    <Paper
-      className="main"
-      sx={{ height: "20rem", width: "20rem", margin: 300 }}
-    >
-      {" "}
-      Hu{" "}
+    <Paper className="main">
+      <Text
+        sx={{ fontSize: "200px" }}
+        className={`${myFont.className} textGrad`}
+      >
+        My Story
+      </Text>
     </Paper>
   );
 };
