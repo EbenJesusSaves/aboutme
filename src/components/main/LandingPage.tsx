@@ -1,26 +1,78 @@
 "use client";
-import { Paper, Text, createStyles, rem } from "@mantine/core";
+import {
+  Container,
+  Grid,
+  Group,
+  Paper,
+  Text,
+  createStyles,
+  rem,
+} from "@mantine/core";
 import React from "react";
 import "./main.css";
 import { myFont } from "@/app/layout";
-import hero from "../../assets/d82c112c-f406-4023-82d5-f3079ea4d0a9_storyHero.avif";
+import hero from "../../assets/replicate-prediction-2f2teczbzcbu3ntitkrie23hjdy.png";
+import lowerThird from "../../assets/Untitled-3-bg.png";
+import lowerThirdTxt from "../../assets/text.png";
 import Image from "next/image";
+import Ticker from "react-ticker";
 
 export const LandingPage = () => {
   const { classes } = useStyles();
 
   return (
-    <Paper className="main">
-      <Text
-        sx={{ fontSize: "300px", textAlign: "center", lineHeight: "300px" }}
-        className={`${myFont.className} textGrad`}
+    <div className="main">
+      <Container
+        size={"xl"}
+        display={"flex"}
+        styles={{ justifyContent: "space-between" }}
       >
-        About
-        <br /> Me
-        <Image src={hero} alt="jo" className={classes.mainImage} />
-      </Text>
-      <Text sx={{ textAlign: "center" }}>This is something I love doing</Text>
-    </Paper>
+        <Ticker offset={80}>
+          {() => (
+            <div
+            // style={{ position: "absolute", top: 10 }}
+            >
+              <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" />
+            </div>
+          )}
+        </Ticker>
+        <Grid>
+          <Grid.Col
+            span={5}
+            style={{
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            {" "}
+            <Text
+              variant="gradient"
+              gradient={{ from: "blue", to: "cyan", deg: 128 }}
+              sx={{ fontSize: "60px", textAlign: "start", fontWeight: "bold" }}
+            >
+              Design, <br />
+              Develop and <br />
+              Build for <br />
+              Amazing People
+            </Text>
+          </Grid.Col>
+          <Grid.Col span={7}>
+            <Image src={hero} layout="responsive" alt="Hero Picture" />
+          </Grid.Col>
+        </Grid>
+      </Container>
+      <div
+      // style={{ position: "relative" }}
+      >
+        <Image
+          src={lowerThird}
+          alt="lower 3"
+          layout="responsive"
+          // style={{ position: "relative" }}
+        />
+      </div>
+      kkkkkkkkk
+    </div>
   );
 };
 

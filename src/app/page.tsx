@@ -6,7 +6,7 @@ import { LandingPage } from "@/components/main/LandingPage";
 export default function Home() {
   return (
     <>
-      <main>
+      <main style={{ margin: 0, padding: 0 }}>
         <LandingPage />
       </main>
     </>
