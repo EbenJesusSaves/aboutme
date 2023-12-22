@@ -74,7 +74,11 @@ export const LandingPage = () => {
         <div
           style={{ position: "absolute", top: 20, }}
         >
-          <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
+          <div style={{ display: 'flex' }}>
+            <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
+            <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
+          </div>
+
         </div>  </div>
     </div>
   );

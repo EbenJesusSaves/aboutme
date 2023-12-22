@@ -34,7 +34,9 @@ exports.LandingPage = function () {
             react_1["default"].createElement("div", null,
                 react_1["default"].createElement(image_1["default"], { src: Untitled_3_bg_png_1["default"], alt: "lower 3", layout: "responsive" })),
             react_1["default"].createElement("div", { style: { position: "absolute", top: 20 } },
-                react_1["default"].createElement(image_1["default"], { src: text_png_1["default"], alt: "lower 3", layout: "responsive", className: main_module_css_1["default"].move })),
+                react_1["default"].createElement("div", { style: { display: 'flex' } },
+                    react_1["default"].createElement(image_1["default"], { src: text_png_1["default"], alt: "lower 3", layout: "responsive", className: main_module_css_1["default"].move }),
+                    react_1["default"].createElement(image_1["default"], { src: text_png_1["default"], alt: "lower 3", layout: "responsive", className: main_module_css_1["default"].move }))),
             "  ")));
 };
 var useStyles = core_1.createStyles(function () { return ({
