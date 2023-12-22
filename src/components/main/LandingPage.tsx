@@ -16,26 +16,23 @@ import lowerThird from "../../assets/Untitled-3-bg.png";
 import lowerThirdTxt from "../../assets/text.png";
 import Image from "next/image";
 import Ticker from "react-ticker";
+import s from './main.module.css'
 
 export const LandingPage = () => {
   const { classes } = useStyles();
 
   return (
-    <div className="main">
+    <div className="main" style={{ overflow: 'hidden' }}>
       <Container
         size={"xl"}
         display={"flex"}
         styles={{ justifyContent: "space-between" }}
       >
-        <Ticker offset={80}>
-          {() => (
-            <div
-            // style={{ position: "absolute", top: 10 }}
-            >
-              <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" />
-            </div>
-          )}
-        </Ticker>
+
+
+
+
+
         <Grid>
           <Grid.Col
             span={5}
@@ -61,17 +58,24 @@ export const LandingPage = () => {
           </Grid.Col>
         </Grid>
       </Container>
-      <div
-      // style={{ position: "relative" }}
-      >
-        <Image
-          src={lowerThird}
-          alt="lower 3"
-          layout="responsive"
+      <div style={{ position: 'relative' }}>
+
+
+        <div
+        // style={{ position: "relative" }}
+        >
+          <Image
+            src={lowerThird}
+            alt="lower 3"
+            layout="responsive"
           // style={{ position: "relative" }}
-        />
-      </div>
-      kkkkkkkkk
+          />
+        </div>
+        <div
+          style={{ position: "absolute", top: 20, }}
+        >
+          <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
+        </div>  </div>
     </div>
   );
 };

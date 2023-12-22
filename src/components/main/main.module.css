@@ -1,0 +1,40 @@
+.move {
+    animation: slide-slow 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    overflow: hidden;
+}
+
+@keyframes slide-slow {
+    from {
+
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes slide-right {
+    0% {
+        transform: none;
+    }
+
+    25% {
+        transform: translateX(20vw);
+    }
+
+    50% {
+        transform: translateX(20vw) translateY(20vw);
+    }
+
+    75% {
+        transform: translateX(0vw) translateY(20vw);
+    }
+
+    to {
+        transform: translateX(0vw) translateY(0vw);
+    }
+}
