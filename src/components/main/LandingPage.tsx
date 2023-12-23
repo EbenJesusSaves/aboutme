@@ -71,7 +71,7 @@ export const LandingPage = () => {
         >
           <div style={{ display: 'flex' }}>
             <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
-            <Image src={lowerThirdTxt} alt="lower 3" layout="responsive" className={s.move} />
+
           </div>
 
         </div>  </div>

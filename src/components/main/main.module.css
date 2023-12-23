@@ -1,6 +1,6 @@
 .move {
     animation: slide-slow 10s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-iteration-count: infinite;
     animation-direction: normal;
     overflow: hidden;
@@ -9,9 +9,8 @@
 
 .move:nth-child(2n +1) {
     animation-delay: 10s;
-    animation-fill-mode: forwards;
-    background-color: blue;
-    animation-duration: 14s;
+    animation-fill-mode: both;
+    animation-duration: 10s;
 
 }
 
