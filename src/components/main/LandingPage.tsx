@@ -28,11 +28,6 @@ export const LandingPage = () => {
         display={"flex"}
         styles={{ justifyContent: "space-between" }}
       >
-
-
-
-
-
         <Grid>
           <Grid.Col
             span={5}
